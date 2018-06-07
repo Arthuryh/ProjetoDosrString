@@ -1,0 +1,47 @@
+create database db_prjFinal;
+use db_prjFinal;
+
+insert into tb_usuario(usuario,senha,nome,email)
+values('admin','admin','administrador','admin@hotmail.com'),
+('joao','joao1','joaozinho','joao@hotmail.com');
+
+create table tb_produto(codBarras int primary key auto_increment, 
+nomeProd varchar(30),qtd int(20),preco decimal(7,2), foto varchar(50));
+
+DELIMITER $$
+ 
+CREATE PROCEDURE Login(in Usu varchar(20), in Pass varchar(20))
+BEGIN
+    SELECT usuario,senha,nome FROM tb_usuario where usuario =usu and senha=pass;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE verificaEmail(in buscaEmail varchar(50) )
+BEGIN
+    SELECT nome FROM tb_usuario where email = buscaEmail;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE alteraSenha(in Novasenha varchar(16), in buscaEmail varchar(50) )
+BEGIN
+    update tb_usuario set senha = Novasenha where email = buscaEmail;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE cadProd(in nomeProd varchar(30), in qtdProd INT(20),in precoProd decimal(7,2))
+BEGIN
+    insert into tb_produto(nome,qtd,preco)
+    values(nomeProd,qtd,preco);
+END $$
+DELIMITER ;
+
+drop table tb_produto;
+drop procedure cadprod;
+
+select * from tb_usuario;
