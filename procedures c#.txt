@@ -1,0 +1,169 @@
+c#-----------------
+Cadastrar Prod
+try
+            {
+                MySqlCommand comand = new MySqlCommand("cadProd");
+
+                con.ConnectionString = endBanco;
+
+                comand.CommandType = System.Data.CommandType.StoredProcedure;
+                comand.Connection = con;
+                con.Open();
+
+                comand.Parameters.Add("@nomeProd", MySqlDbType.VarChar).Value = txtNome.Text;
+                comand.Parameters.Add("@qtdProd", MySqlDbType.Int32).Value = (txtQtd.Text);
+                comand.Parameters.Add("@precoProd", MySqlDbType.Decimal).Value = Convert.ToDecimal(txtPreco.Text);
+
+                comand.ExecuteNonQuery();
+
+
+                lblSenha.Text = "Cadastrado com sucesso";
+                lblSenha.ForeColor = Color.Green;
+
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro" + erro);
+
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+login
+ try
+            {
+                con.ConnectionString = endBanco;
+
+                MySqlCommand comand = new MySqlCommand("Login");
+                comand.CommandType = System.Data.CommandType.StoredProcedure;
+                comand.Connection = con;
+
+                comand.Parameters.Add("@Usu", MySqlDbType.VarChar).Value = txtUser.Text;
+                comand.Parameters.Add("@Pass", MySqlDbType.VarChar).Value = txtPass.Text;
+                
+
+                con.Open();
+                MySqlDataReader dr = comand.ExecuteReader();
+
+                if (dr.HasRows == true)
+                {
+                    if (dr.Read())
+                    {
+                    Program.nome = Convert.ToString(dr["nome"]);
+
+                    }
+
+
+                frmMDI mdi =new frmMDI();
+                mdi.Show();
+                       
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("Não cadastrado" );
+                    con.Close();
+                }
+            
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("" + erro);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            
+        }
+verificaEmail
+ try
+            {
+                con.ConnectionString = endBanco;
+
+                MySqlCommand comand = new MySqlCommand("Login");
+                comand.CommandType = System.Data.CommandType.StoredProcedure;
+                comand.Connection = con;
+
+                comand.Parameters.Add("@Usu", MySqlDbType.VarChar).Value = txtUser.Text;
+                comand.Parameters.Add("@Pass", MySqlDbType.VarChar).Value = txtPass.Text;
+                
+
+                con.Open();
+                MySqlDataReader dr = comand.ExecuteReader();
+
+                if (dr.HasRows == true)
+                {
+                    if (dr.Read())
+                    {
+                    Program.nome = Convert.ToString(dr["nome"]);
+
+                    }
+
+
+                frmMDI mdi =new frmMDI();
+                mdi.Show();
+                       
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("Não cadastrado" );
+                    con.Close();
+                }
+            
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("" + erro);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            
+        }
+alteraSenha
+try
+            {
+                MySqlCommand comand = new MySqlCommand("alteraSenha");
+
+                con.ConnectionString = endBanco;
+
+                comand.CommandType = System.Data.CommandType.StoredProcedure;
+                comand.Connection = con;
+                con.Open();
+              
+                comand.Parameters.Add("@Novasenha", MySqlDbType.VarChar).Value = txtSenha.Text;
+                comand.Parameters.Add("@buscaEmail", MySqlDbType.VarChar).Value = Program.email;
+                
+                comand.ExecuteNonQuery();
+
+
+                lblSenha.Text = "Senha alterada com sucesso";
+                lblSenha.ForeColor = Color.Green;
+
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro" + erro);
+                
+            }
+            finally
+            {
+                con.Close();
+            }
+        }

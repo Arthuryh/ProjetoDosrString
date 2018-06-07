@@ -1,0 +1,60 @@
+create database projeto;
+use projeto;
+
+create table usuario(
+id int primary key auto_increment not null,
+nome varchar(20) not null,
+login varchar(15) not null,
+senha varchar(16) not null,
+email varchar(50) not null
+);
+
+create table produto(
+codProd int primary key auto_increment not null,
+nome varchar(20) not null,
+qtd INT(100),
+preco decimal (7,2)
+);
+
+insert into usuario(nome,login,senha,email)
+values("Dal","admin","admin","dal@gmail.com");
+
+
+
+DELIMITER $$
+ 
+CREATE PROCEDURE Login(in Usu varchar(20), in Pass varchar(20))
+BEGIN
+    SELECT login,senha,nome FROM usuario where login =usu and senha=pass;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE verificaEmail(in buscaEmail varchar(50) )
+BEGIN
+    SELECT nome FROM usuario where email = buscaEmail;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE alteraSenha(in Novasenha varchar(16), in buscaEmail varchar(50) )
+BEGIN
+    update usuario set senha = Novasenha where email = buscaEmail;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE cadProd(in nomeProd varchar(20), in qtdProd INT(100),in precoProd decimal(7,2))
+BEGIN
+    insert into produto(nome,qtd,preco)
+    values	(nomeProd,qtdProd,precoProd);
+END $$
+DELIMITER ;
+
+drop table produto;
+drop procedure cadProd;
+
+select * from produto;
