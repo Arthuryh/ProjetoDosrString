@@ -1,0 +1,39 @@
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.pdb
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmSplash.resources
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
+c:\users\admin\documents\visual studio 2013\Projects\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
+C:\Users\Admin\Desktop\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe.config
+C:\Users\Admin\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
+C:\Users\Admin\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
+C:\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe.config
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
+C:\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe
+C:\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.pdb
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmSplash.resources
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Properties.Resources.resources
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.GenerateResource.Cache
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmLogin.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe.config
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmLogin.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmRecuperarSenha.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmSplash.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Properties.Resources.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.GenerateResource.Cache
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.pdb
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\bin\Debug\MySql.Data.dll
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmMenu.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmCadastrarProduto.resources
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmCadastrarProduto.resources
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmMenu.resources
+C:\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmRecuperarSenha.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.frmEtecWord.resources
+C:\Users\Yukio\Desktop\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csprojResolveAssemblyReference.cache
